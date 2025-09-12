@@ -1,16 +1,131 @@
 :root {
     /* login */
     --main-red: #e60023;
-    --blue: #435ee5;
+    --main-blue: #435ee5;
     /* inspiration */
-    --yellow: #c28b00;
-    --green: #618c7b;
-    --light-blue: #0076d3;
-    --dark-green: #407a57;
+    --ins-yellow: #c28b00;
+    --ins-green: #618c7b;
+    --ins-light-blue: #0076d3;
+    --ins-dark-green: #407a57;
     --ins-text: #c31952;
     /* search */
-    --light-yellow: #fffc00;
+    --search-light-yellow: #fffc00;
     --search-red: #c31952;
+    /* save */
+    --save-dark-green: #006b6c;
+    --save-light-green: #dafff6;
+    /* shop */
+    --shop-light-pink: #ffe2eb;
+    --shop-red: #c31952;
 
 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+}
+
+body nav {
+    position: fixed;
+    z-index: 1;
+    background: #fff;
+    width: 100%;
+    display: flex;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    
+}
+
+.background-wrapper {
+    height: auto;
+    position: relative;
+    top: -500px;
+    display: flex;
+    align-items: flex-start;
+    column-gap: 15px;
+}
+
+.container::after {
+    position: absolute;
+    content: '';
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.background-wrapper .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 15px;
+}
+.background-wrapper .box div {
+    overflow: hidden;
+}
+
+.background-wrapper .box div img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.background-wrapper .box div {
+    width: 230px;
+    height: 350px;
+    background: steelblue;
+    border-radius: 20px;
+}
+
+.background-wrapper .box1 {
+    position: relative;
+    top: 440px;
+
+}
+
+.background-wrapper .box2 {
+    position: relative;
+    top: 265px;
+
+}
+
+.background-wrapper .box3 {
+    position: relative;
+    top: 175px;
+
+}
+
+.background-wrapper .box5 {
+    position: relative;
+    top: 175px;
+
+}
+
+.background-wrapper .box6 {
+    position: relative;
+    top: 265px;
+
+}
+
+.background-wrapper .box7 {
+    position: relative;
+    top: 440px;
+
+}
+
+.content {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    background-color: rgb(136, 255, 0);
 }
