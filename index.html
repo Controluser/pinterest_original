@@ -5,26 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pinterest</title>
     <link rel="stylesheet" href="style.css" type="text/css" />
-    <link rel="icon" href="assets/images/favicon.ico" type="icon/x-image">
+    <link rel="icon" href="assets/images/favicon.ico" type="icon/x-image" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      type="text/css"
+    />
   </head>
   <body>
-      <nav>
-        <div class="logo-section">
-          <img src="/assets/images/txt-logo.png" alt="pinterest-logo" width="150px"/>
-          <a href="#">Explore</a>
-        </div>
-        <div class="links-login-sigup-section">
-          <ul>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Business</a></li>
-            <li><a href="#">Create</a></li>
-            <li><a href="#">News</a></li>
-          </ul>
-          <button class="login">Login</button>
-          <button class="signup"> Sign up</button>
-        </div>
-      </nav>
-    <div class="container">
+    <nav>
+      <div class="logo-section">
+        <img src="/assets/images/txt-logo.png" alt="pinterest-logo" />
+        <a href="#">Explore</a>
+      </div>
+      <div class="links-login-sigup-section">
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Businesses</a></li>
+          <li><a href="#">Create</a></li>
+          <li><a href="#">News</a></li>
+        </ul>
+        <button class="login">Login</button>
+        <button class="signup">Sign up</button>
+      </div>
+    </nav>
+    <div class="container section" id="login">
       <div class="background-wrapper">
         <div class="box box1">
           <div><img src="assets/images/login/1.jpg" alt="" /></div>
@@ -76,7 +81,118 @@
           <div><img src="assets/images/login/1.jpg" alt="" /></div>
         </div>
       </div>
+      <!--background-wrapper-->
+      <div class="content-wrapper">
+        <div class="text">
+          <p>Log in to get your ideas</p>
+        </div>
+        <div class="form">
+          <form action="#">
+            <div class="form-head">
+              <img src="assets/images/favicon.ico" alt="" width="100px" />
+              <h1>Welcome to Pinerest</h1>
+            </div>
+            <div class="form-body">
+              <div class="input-wrap">
+                <label for="email">Email address</label>
+                <input type="email" id="email" placeholder="Email" />
+              </div>
+              <div class="input-wrap">
+                <label for="passwd">Password</label>
+                <input type="password" id="passwd" placeholder="Password" />
+                <i class="fa-regular fa-eye"></i>
+                <i class="fa-regular fa-eye-slash"></i>
+              </div>
+              <a href="#" class="forgt-passwd">Forgotten your password?</a>
+              <input class="submit-btn" type="submit" value="Log in" />
+            </div>
+          </form>
+          <div class="form-footer">
+            <span>OR</span>
+            <div class="google">
+              <i class="fa-brands fa-google"></i>
+              <p>Continue with google</p>
+            </div>
+            <div class="qr">
+              <i class="fa-solid fa-qrcode"></i>
+              <p>Use QR code</p>
+            </div>
+            <p class="facebook-login">Facebook login is no longer available</p>
+            <a href="#" class="update-log-method">Update login method</a>
+            <a href="#" class="sign-up">Not on Pinterest yet? Sign up</a>
+            <p class="business">Are you a business? <a href="#">Get started here!</a></p>
+            <p class="tos-pp">
+              By continuing, you agree to Pinterest's <a href="" class="link terms-o-service">Terms of service</a> and
+              acknowlegde that you've read our <a href="#" class="privacy-policy link">Privact Policy.</a>
+              <a href="#" class="link">Notice at collection.</a>
+            </p>
+          </div>
+        </div>
+        <!--form-->
+      </div>
+      <!--content-wrapper-->
+      <div class="scroll-down-icon">
+        <i class="fa-solid fa-chevron-down"></i>
+      </div>
     </div>
-    <div class="content"></div>
+    <!--container-->
+
+    <!-- section 2 start -->
+    <div id="inspiration" class="section">
+        <div class="ins-background-wrapper">
+          <div class="box box1">
+          <div><img src="assets/images/login/1.jpg" alt="" /></div>
+          <div><img src="assets/images/login/2.jpg" alt="" /></div>
+          <div><img src="assets/images/login/3.jpg" alt="" /></div>
+          <div><img src="assets/images/login/4.jpg" alt="" /></div>
+          <div><img src="assets/images/login/5.jpg" alt="" /></div>
+        </div>
+        <div class="box box2">
+          <div><img src="assets/images/login/6.jpg" alt="" /></div>
+          <div><img src="assets/images/login/7.jpg" alt="" /></div>
+          <div><img src="assets/images/login/8.jpg" alt="" /></div>
+          <div><img src="assets/images/login/9.jpg" alt="" /></div>
+          <div><img src="assets/images/login/10.jpg" alt="" /></div>
+        </div>
+        <div class="box box3">
+          <div><img src="assets/images/login/11.jpg" alt="" /></div>
+          <div><img src="assets/images/login/12.jpg" alt="" /></div>
+          <div><img src="assets/images/login/13.jpg" alt="" /></div>
+          <div><img src="assets/images/login/14.jpg" alt="" /></div>
+          <div><img src="assets/images/login/15.jpg" alt="" /></div>
+        </div>
+        <div class="box box4">
+          <div><img src="assets/images/login/16.jpg" alt="" /></div>
+          <div><img src="assets/images/login/17.jpg" alt="" /></div>
+          <div><img src="assets/images/login/18.jpg" alt="" /></div>
+          <div><img src="assets/images/login/19.jpg" alt="" /></div>
+          <div><img src="assets/images/login/20.jpg" alt="" /></div>
+        </div>
+        <div class="box box5">
+          <div><img src="assets/images/login/21.jpg" alt="" /></div>
+          <div><img src="assets/images/login/22.jpg" alt="" /></div>
+          <div><img src="assets/images/login/23.jpg" alt="" /></div>
+          <div><img src="assets/images/login/24.jpg" alt="" /></div>
+          <div><img src="assets/images/login/25.jpg" alt="" /></div>
+        </div>
+        <div class="box box6">
+          <div><img src="assets/images/login/26.jpg" alt="" /></div>
+          <div><img src="assets/images/login/27.jpg" alt="" /></div>
+          <div><img src="assets/images/login/28.jpg" alt="" /></div>
+          <div><img src="assets/images/login/29.jpg" alt="" /></div>
+          <div><img src="assets/images/login/30.jpg" alt="" /></div>
+        </div>
+        <div class="box box7">
+          <div><img src="assets/images/login/31.jpg" alt="" /></div>
+          <div><img src="assets/images/login/32.jpg" alt="" /></div>
+          <div><img src="assets/images/login/33.jpg" alt="" /></div>
+          <div><img src="assets/images/login/2.jpg" alt="" /></div>
+          <div><img src="assets/images/login/1.jpg" alt="" /></div>
+        </div>
+        </div>
+    </div>
+    <!-- section 2 end -->
+    <div class="section search"></div>
+    <script src="main.js"></script>
   </body>
 </html>
