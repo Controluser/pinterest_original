@@ -26,3 +26,6 @@ eyeHide.addEventListener("click", function () {
 scrollBtn.addEventListener('click', () => {
     nextSection.scrollIntoView({behavior:'smooth'})
 })
+
+
+const boxes = document.querySelectorAll('.ins-background')

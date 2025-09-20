@@ -180,15 +180,18 @@ body nav .links-login-sigup-section .signup:hover {
   top: 440px;
 }
 
-.background-wrapper .box2, .box6,
-.ins-background-wrapper .box3, .box5 {
+.background-wrapper .box2,
+.box6,
+.ins-background-wrapper .box3,
+.box5 {
   position: relative;
   top: 265px;
 }
 
 .background-wrapper .box3,
 .background-wrapper .box5,
-.ins-background-wrapper .box2, .box6 {
+.ins-background-wrapper .box2,
+.box6 {
   position: relative;
   top: 175px;
 }
@@ -489,9 +492,9 @@ body nav .links-login-sigup-section .signup:hover {
 }
 
 #inspiration::after {
-  content: '';
-  height: 200px;
-  background: linear-gradient(to top,rgba(255, 255, 255, 1) 30%, rgba(255, 255, 255, 0.1) 70%);
+  content: "";
+  height: 250px;
+  background: linear-gradient(to top, rgba(255, 255, 255, 1) 20%, rgba(255, 255, 255, 0) 80%);
   width: 100%;
   position: absolute;
   bottom: 0;
@@ -499,30 +502,84 @@ body nav .links-login-sigup-section .signup:hover {
 }
 
 #inspiration .ins-background-wrapper {
-  display: flex;
+  border: 2px solid rgb(255, 0, 0);
   top: 25%;
+  display: flex;
+  overflow: hidden;
   position: absolute;
-  column-gap: 15px;
   z-index: 0;
-  border: 1px solid red;
-
+  user-select: none;
+  column-gap: 15px;
 
 }
 
-#inspiration .ins-background-wrapper .box1 {
-  border: 1px solid lime;
-  animation: hide 1s linear 5s 1;
+#inspiration .ins-background-wrapper .box {
   position: relative;
-  transition: all 500ms linear;
+  transition: all 300ms linear;
 }
 
-@keyframes hide {
+.ins-background-wrapper .box1 {
+  animation: move 6s ease-in-out infinite;
+  --first: 50px;
+  --second: 0;
+  --third: -100px;
+}
+
+.ins-background-wrapper .box2 {
+  animation: move 6s ease-in-out 0.3s infinite;
+  --first: 225px;
+  --second: 175px;
+  --third: 75px;
+}
+
+.ins-background-wrapper .box3 {
+  animation: move 6s ease-in-out 0.6s infinite;
+  --first: 325px;
+  --second: 265px;
+  --third: 165px;
+}
+
+.ins-background-wrapper .box4 {
+  animation: move 6s ease-in-out 1s infinite;
+  --first: 490px;
+  --second: 440px;
+  --third: 330px;
+}
+
+.ins-background-wrapper .box5 {
+  animation: move 6s ease-in-out 1.3s infinite;
+  --first: 325px;
+  --second: 265px;
+  --third: 165px;
+}
+
+.ins-background-wrapper .box6 {
+  animation: move 6s ease-in-out 1.6s infinite;
+  --first: 225px;
+  --second: 175px;
+  --third: 75px;
+}
+
+.ins-background-wrapper .box7 {
+  animation: move 6s ease-in-out 2s infinite;
+  --first: 100px;
+  --second: 0;
+  --third: -100px;
+}
+
+@keyframes move {
   0% {
-    top: 0;
-  }
-  100% {
-    top: -100px;
+    top: var(--first);
     opacity: 0;
   }
-  
+  10%,
+  90% {
+    top: var(--second);
+    opacity: 1;
+  }
+
+  100% {
+    top: var(--third);
+    opacity: 0;
+  }
 }
