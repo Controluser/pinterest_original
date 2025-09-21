@@ -671,12 +671,8 @@ body nav .links-login-sigup-section .signup:hover {
   display: flex;
 }
 
-
 .search {
   background: #fffd92;
-  border: 1px solid lime;
-
-
 }
 
 .search .search-content-wrapper {
@@ -685,7 +681,8 @@ body nav .links-login-sigup-section .signup:hover {
   align-items: center;
 }
 
-.search .left-content, .right-content {
+.search .left-content,
+.right-content {
   width: 50%;
 }
 
@@ -708,7 +705,6 @@ body nav .links-login-sigup-section .signup:hover {
   width: 204px;
   left: 30px;
   z-index: 1;
-
 }
 
 .search .left-content .right {
@@ -750,7 +746,6 @@ body nav .links-login-sigup-section .signup:hover {
   font-size: 20px;
 }
 
-
 .search .right-content {
   color: var(--search-red);
   display: flex;
@@ -789,3 +784,104 @@ body nav .links-login-sigup-section .signup:hover {
   background: #d10423;
 }
 
+.explore {
+  background: #dafff6;
+}
+
+.explore .explore-content-wrapper {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.explore .explore-content-wrapper .left-content {
+  width: 45%;
+}
+
+
+.explore-content-wrapper .left-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--save-dark-green);
+}
+.explore-content-wrapper .left-content h1 {
+  font-size: 55px;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.explore-content-wrapper .left-content p {
+  width: 70%;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 15px;
+  line-height: 25px;
+}
+
+.explore-content-wrapper .left-content .btn {
+  background: var(--main-red);
+  border: none;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 10px 15px;
+  border-radius: 12px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.explore-content-wrapper .right-content {
+  position: relative;
+  height: 100%;
+  width: 55%;
+}
+
+.explore-content-wrapper .right-content .box1 {
+  width: 400px;
+  height: 420px;
+  position: absolute;
+  top: 150px;
+  left: 20px;
+}
+
+.explore-content-wrapper .right-content .box2 {
+  position: absolute;
+  left: 197px;
+  top: 610px;
+  width: 223px;
+  height: 235px;
+}
+
+
+.explore-content-wrapper .right-content .box3 {
+  position: absolute;
+  width: 223px;
+  height: 235px;
+  left: 480px;
+  top: 150px;
+}
+
+.explore-content-wrapper .right-content .box4 {
+  position: absolute;
+  width: 165px;
+  height: 173px;
+  top: 420px;
+  left: 460px;
+
+}
+.explore-content-wrapper .right-content .box5 {
+  width: 223px;
+  height: 235px;
+  position: absolute;
+  left: 460px;
+  top: 630px;
+}
+
+
+.explore-content-wrapper .right-content img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
