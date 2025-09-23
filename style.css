@@ -220,6 +220,7 @@ body nav .links-login-sigup-section .signup:hover {
 .container .content-wrapper .text p {
   font-size: 60px;
   font-weight: 600;
+  color: #fff;
 }
 
 .container .content-wrapper .form {
@@ -603,6 +604,7 @@ body nav .links-login-sigup-section .signup:hover {
   font-size: 55px;
   font-weight: 600;
   text-align: center;
+  color: #000;
 }
 #inspiration .ins-content-wrapper p:first-child {
   z-index: 2;
@@ -617,6 +619,8 @@ body nav .links-login-sigup-section .signup:hover {
   --first: 30px;
   --second: 0;
   --third: -30px;
+  width: 100%;
+  transition: all 100ms linear;
 }
 
 @keyframes fade {
@@ -624,8 +628,8 @@ body nav .links-login-sigup-section .signup:hover {
     top: var(--first);
     opacity: 0;
   }
-  5%,
-  95% {
+  10%,
+  90% {
     top: var(--second);
     opacity: 1;
   }
@@ -650,7 +654,8 @@ body nav .links-login-sigup-section .signup:hover {
   width: 11px;
   height: 11px;
   border-radius: 50%;
-  background: #c28b00;
+  background: #e1e1e1;
+  transition: all 100ms linear;
 }
 
 #inspiration .outfit,
@@ -799,7 +804,6 @@ body nav .links-login-sigup-section .signup:hover {
   width: 45%;
 }
 
-
 .explore-content-wrapper .left-content {
   display: flex;
   flex-direction: column;
@@ -821,15 +825,21 @@ body nav .links-login-sigup-section .signup:hover {
   line-height: 25px;
 }
 
-.explore-content-wrapper .left-content .btn {
+.explore-content-wrapper .left-content .btn,
+.shop-content-wrapper .right-content .btn {
   background: var(--main-red);
   border: none;
-  font-size: 12px;
+  font-size: 16px;
   font-weight: 500;
   padding: 10px 15px;
   border-radius: 12px;
   color: #fff;
   cursor: pointer;
+}
+
+.explore-content-wrapper .left-content .btn:hover,
+.shop-content-wrapper .right-content .btn:hover {
+  background: #d10423;
 }
 
 .explore-content-wrapper .right-content {
@@ -846,6 +856,36 @@ body nav .links-login-sigup-section .signup:hover {
   left: 20px;
 }
 
+.explore-content-wrapper .right-content .box1 .inside-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.explore-content-wrapper .right-content .box1 .inside-content span {
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 65px;
+  display: block;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.explore-content-wrapper .right-content .box1 .inside-content img {
+  width: 90px;
+}
+
+.explore-content-wrapper .right-content .box1 .inside-content .images {
+  margin-bottom: 20px;
+}
+
 .explore-content-wrapper .right-content .box2 {
   position: absolute;
   left: 197px;
@@ -854,7 +894,16 @@ body nav .links-login-sigup-section .signup:hover {
   height: 235px;
 }
 
-
+.explore-content-wrapper .right-content .box2 span {
+  position: absolute;
+  color: #fff;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 38px;
+  width: 70%;
+  bottom: 30px;
+  left: 30px;
+}
 .explore-content-wrapper .right-content .box3 {
   position: absolute;
   width: 223px;
@@ -863,13 +912,33 @@ body nav .links-login-sigup-section .signup:hover {
   top: 150px;
 }
 
+.explore-content-wrapper .right-content .box3 span {
+  position: absolute;
+  color: #fff;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 35px;
+  width: 70%;
+  bottom: 20px;
+  left: 20px;
+}
+
 .explore-content-wrapper .right-content .box4 {
   position: absolute;
   width: 165px;
   height: 173px;
   top: 420px;
   left: 460px;
+}
 
+.explore-content-wrapper .right-content .box4 span {
+  position: absolute;
+  color: #fff;
+  font-weight: 500;
+  font-size: 18px;
+  bottom: 20px;
+  left: 20px;
+  line-height: 22px;
 }
 .explore-content-wrapper .right-content .box5 {
   width: 223px;
@@ -879,9 +948,135 @@ body nav .links-login-sigup-section .signup:hover {
   top: 630px;
 }
 
+.explore-content-wrapper .right-content .box5 span {
+  position: absolute;
+  color: #fff;
+  font-weight: 500;
+  bottom: 30px;
+  font-size: 30px;
+  line-height: 40px;
+  left: 20px;
+}
 
-.explore-content-wrapper .right-content img {
+.explore-content-wrapper .right-content > div > img {
   object-fit: cover;
   width: 100%;
   height: 100%;
+}
+
+.shop {
+  background: #ffe2eb;
+  position: relative;
+}
+
+.shop .shop-content-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.shop .shop-content-wrapper .left-content,
+.shop-content-wrapper .left-content {
+  width: 50%;
+  height: 100%;
+}
+
+.shop .shop-content-wrapper .left-content {
+  position: relative;
+  
+
+}
+
+.shop-content-wrapper .left-content img:nth-child(1) {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.shop-content-wrapper .left-content img:nth-child(2) {
+  position: absolute;
+  width: 215px;
+  left: 85px;
+  bottom: 150px;
+  border-radius: 15px;
+}
+
+.shop-content-wrapper .left-content img:nth-child(3) {
+  position: absolute;
+  width: 96px;
+  left: 50px;
+  bottom: 120px;
+}
+
+.shop-content-wrapper .left-content .creator-name {
+  position: absolute;
+  bottom: 100px;
+  left: 150px;
+  color: #fff;
+}
+
+.shop-content-wrapper .left-content .creator-name span:nth-child(1) {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.shop-content-wrapper .right-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.shop .shop-content-wrapper .right-content h1,
+.shop .shop-content-wrapper .right-content p {
+  width: 60%;
+  text-align: center;
+  color: #c32f00;
+}
+
+
+.shop-content-wrapper .right-content h1 {
+  font-size: 60px;
+  line-height: 70px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.shop-content-wrapper .right-content p {
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 45px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .footer-links {
+  list-style: none;
+}
+
+footer .footer-links li {
+  display: inline;
+  padding: 0 3px;
+}
+
+footer .footer-links li a {
+  color: var(--main-blue);
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+footer .footer-links li a:hover {
+  text-decoration: underline;
+  color: #3750ce;
 }

@@ -36,19 +36,16 @@ const dinner = document.querySelector('.dinner')
 const dinBoxes = dinner.querySelectorAll('.box')
 const home = document.querySelector('.home')
 const homBoxes = home.querySelectorAll('.box')
-const indexBtn = document.querySelectorAll('.index-btn');
-const text = document.getElementById('text')
-const hexColors = ['#c28b00', '#618c7b', '#0076d3', '#407a57']
 index = 0
 
 
 function showNext() {
-
+  
   // remove "show"(class) from background-wrappers
-
+  
   //show current background-wrapper
   backgrounds[index].classList.add('active')
-
+  
   // move to next background-wrapper
   index++
   if(index >= backgrounds.length) {
@@ -78,3 +75,27 @@ function removeActive() {
 }
 
 // chnge inspiration text
+const hexColors = ['#c28b00', '#618c7b', '#0076d3', '#407a57']
+const indexBtn = document.querySelectorAll('.index-btn');
+const text = document.getElementById('text')
+
+const insText = ['weeknight dinner idea', 'home décor idea', 'new outfit', 'green thumb idea']
+let insIndex = 0
+function changeText() {
+  text.innerHTML = insText[insIndex]
+  text.style.color = hexColors[insIndex]
+  indexBtn[insIndex].style.background = hexColors[insIndex]
+  if(insIndex > 0) {
+    indexBtn[insIndex - 1].style.background = '#e1e1e1'
+  }
+  insIndex++
+  setTimeout(changeText, 5800)
+  if(insIndex >= insText.length) {
+    insIndex = 0
+    setTimeout(() => {
+      indexBtn[indexBtn.length - 1].style.background = '#e1e1e1'
+    }, 6000)
+  }
+}
+
+changeText()
